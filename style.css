@@ -1,0 +1,224 @@
+/* Global style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3dada;
+    color: #111;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+header h1 {
+    margin: 10px 0 5px 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 5px;
+    font-style: italic;
+    color: #ccc;
+}
+header nav a {
+    color: rgb(185, 178, 178);           /* White text */
+    text-decoration: none;  /* Remove underline */
+    margin: 0 10px;         /* Space between links */
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #4f73aa;         /* Optional: color change on hover */
+}
+
+/* Highlight class for clicked section */
+.active-section {
+    background-color: #c9c9c9;  /* Brown highlight */
+    transition: background-color 0.5s;
+}
+
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+
+/* Headings */
+h2 {
+    color: #001f4d; /* Dark Blue */
+    border-bottom: 2px solid #001f4d;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    color: #222;
+}
+
+.skill-box {
+    display: grid;
+    grid-template-columns: repeat(4, 5fr); /* 3 columns */
+    gap: 10px; /* space between items */
+}
+
+.skill-box span {
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+.projects {
+    margin-top: 30px;
+}
+
+.projects h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.projects ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.projects li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.projects a {
+    color: #000;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+.achievements {
+    margin-top: 30px;
+}
+
+.achievements h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.achievements ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.achievements li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.achievements a {
+    color: #000;
+    text-decoration: none;
+}
+
+.achievements a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Contact Links */
+a {
+    color: #4f73aa; /* Dark Blue */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sign-up Form */
+.signup {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"],
+.signup select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.signup input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #001f4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup input[type="submit"]:hover {
+    background-color: #4f73aa;
+}
+
+.signup input[type="radio"],
+.signup input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}

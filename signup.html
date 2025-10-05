@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Afrina Ashraf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>                          </h1>
+    <h1>Afrina Ashraf's Portfolio</h1>
+    <nav>
+        
+        
+        
+    </nav>
+</header>
+
+
+    <section class="signup">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6"><br>
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Confirm password" required><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female<br>
+
+            <label>Interests:</label>
+            <input type="checkbox" name="interest" value="AI"> AI
+            <input type="checkbox" name="interest" value="Web"> Web
+            <input type="checkbox" name="interest" value="ML"> ML<br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+            </select><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Afrina Ashraf Portfolio</p>
+    </footer>
+
+    <script>
+        // Simple password validation
+       document.getElementById("signupForm").addEventListener("submit", function(e) {
+    let password = document.getElementById("password").value;
+    let confirm = document.getElementById("confirm").value;
+
+    if(password !== confirm) {
+        alert("Passwords do not match!");
+        e.preventDefault();
+    } else {
+        // Redirect to welcome page instead of resume
+        e.preventDefault(); // prevent form from reloading
+        window.location.href = "welcome.html";
+    }
+});
+
+        
+    </script>
+</body>
+</html>
